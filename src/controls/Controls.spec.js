@@ -6,7 +6,6 @@ import Controls from './Controls';
 test('control lock button', () => {
     const locked = false
     const closed = false
-    
     const {getByText, rerender} = render(<Controls/>)
     const lockButton = getByText(/lock gate/i)
     const closeButton = getByText(/close gate/i)
