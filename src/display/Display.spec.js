@@ -5,8 +5,8 @@ import {render} from '@testing-library/react';
 import Display from './Display';
 
 test('Closed displays correctly', () => {
-    const locked = false,
-        closed = false;
+    const locked = false
+    const closed = false;
 
     const {getByText, rerender} = render(<Display/>)
         getByText(/unlocked/i)
